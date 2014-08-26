@@ -26,10 +26,10 @@ function httpGet(theUrl)
 
 function generateQuotes()
 {
-	//Takes httpGet('http://acoard.com/projects/beyondgoodandevil/text.txt') as input
+	//Takes httpGet('http://acoard.github.io/Beyond-Good-and-Evil/text.txt') as input
 
 	//Creates an array of strings, each string representing to a numbered section by Nietzsche.
-	var source = httpGet('http://acoard.com/projects/beyondgoodandevil/text.txt')
+	var source = httpGet('http://acoard.github.io/Beyond-Good-and-Evil/text.txt')
 	var threeDigits = new RegExp("\n\n(?=[0-9]{1,3}[A-Z]?.)");
 	var quoteArray = source.split(threeDigits);
 
@@ -52,9 +52,9 @@ function wordsGet(htmlResponse)
 function run()
 {
 	var source;
-	source = httpGet('http://acoard.com/projects/beyondgoodandevil/source.html');
+	source = httpGet('http://acoard.github.io/Beyond-Good-and-Evil/source.html');
 	wordsGet(source);
-	paras = wordsGet(httpGet('http://acoard.com/projects/beyondgoodandevil/source.html'));
+	paras = wordsGet(httpGet('http://acoard.github.io/Beyond-Good-and-Evil/source.html'));
 	generateQuotes()
 
 }
