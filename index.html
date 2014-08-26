@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+      <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Beyond Good and Evil - acoard.com </title>
+    <meta name="description" content="Beyond Good and Evil: A Prelude to Philosophy of the Future">
+
+    <link rel='stylesheet' href='nietzsche.css' type='text/css' media='all'>
+    
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.js'></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src='gutenberg.js'></script>
+    <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Averia+Serif+Libre:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:300,400,600,700,800|Gentium+Book+Basic:400,400italic|Vollkorn:400italic,400' rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
+
+
+
+
+
+
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-48623356-1', 'acoard.com');
+    ga('send', 'pageview');
+
+    </script>
+  </head>
+  <body ng-app ng-controller="paraCtrl">  
+    <section id="nietzsche">
+      <section class="text">
+          <h1>Beyond<br> Good <span>&amp;</span> Evil</h1>
+          <h2><span>Friedrich Nietzsche</span></h2>
+          <nav>
+            <button ng-show="currentPara!=0"ng-click="backPara()">Back</button>
+            <button ng-click="randomPara()">Random</button>
+            <button ng-show="currentPara!=299" ng-click='nextPara()'>Next</button>
+          </nav>
+        <!-- <section class="excerpt" ng-class="{oneColumn: paragraph.length < 1000} "> -->
+        <section ng-class="{oneColumn: paragraph.length < 1000, excerpt: paragraph.length >= 1000} ">
+            <p>{{paragraph}}</p>
+        </section>
+      </section>
+    </section>
+  </body>
+</html>
