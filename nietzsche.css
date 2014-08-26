@@ -1,0 +1,198 @@
+/* Global Reset
+------------------------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+
+/*
+-----------------------------------
+  BEYOND CSS AND HTML: A PRELUDE TO DESIGN OF THE FUTURE
+------------------------------------
+*/
+
+body {
+    background: #F15330;
+  margin-bottom: 338px;
+}
+
+#nietzsche {
+    background: #F15330;
+    padding: 20px 0;
+}
+
+#nietzsche .text {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 800px;
+}
+
+#nietzsche .excerpt {
+    -moz-column-count: 2;
+    -moz-column-gap: 50px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 50px;
+}
+
+#nietzsche h1 {
+    color: #222;
+    font: 800 64px/64px "Questrial";
+    margin: 64px 0 64px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 800px;
+    
+}
+
+h1 span {font-family: 'Pinyon Script';}
+
+
+#nietzsche h2 {
+    border-top: 1px solid #222222;
+    color: #222;
+    font: 800 20px/20px "open sans";
+    margin: 20px 0 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#nietzsche h2 span {
+    background: #F15330;
+    padding: 0 20px;
+    position: relative;
+    top: -10px;
+}
+
+#nietzsche p {
+    color: #222;
+    /*font: 400 16px/24px "gentium book basic";*/
+    /*font-family: 'Averia Serif Libre', cursive;*/
+    font: 400 16px/20px "Gentium book basic";
+    margin: 0;
+    text-align: justify;
+     line-height: 24px;   
+}
+
+p:first-line {
+    font: 700 18px/20px "Gentium book basic";
+    font-style: italic;
+}
+
+nav {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.oneColumn {
+    -moz-column-count: 1;
+    -moz-column-gap: 0px;
+    -webkit-column-count: 1;
+    -webkit-column-gap: 0px;
+    column-count: 1;
+    column-gap: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+button {
+    font: 400 28px/20px "futura";
+    font-variant: small-caps;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+    background-color: #F15330;
+    margin-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 25px;
+}
+
+button:focus {
+    outline: none;
+}
+
+h1:first-child{
+    margin: 0 0 5px 0;
+    }
+
+
+
+nav {
+    position: relative;
+}
+
+nav input {
+    width: 60px;
+    color: #222;
+    background: #F15330;
+    border: 1px dotted black;
+    position: absolute;
+    left: 166px;
+    bottom: 20px;
+    font: 400 22px/20px "Gentium book basic";
+    font-variant: small-caps;
+    cursor: text;
+    text-align: center;
+}
+
+label {
+    position: absolute;
+    left: 0;
+    font: 400 22px/20px "Gentium book basic";
+    font-variant: small-caps;
+}
+
+input:focus {
+    outline: none;
+}
+
+small {
+    font-size: 70%;
+}
+
+
+
